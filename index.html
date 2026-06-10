@@ -7,9 +7,127 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    
+
 </head>
 <body>
+
+    <header>
+
+        <!-- Creamos la barra de navegación, con el nombre del restaurante, y las distintas opciones a elegir -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Rincón Orgánico</a>
+                <ul class="navbar-nav ms-auto flex-row gap-4">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Carta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    
+
+                </ul>
+                </div>
+            </div>
+                    
+        </nav>
+
+        <!-- Luego colocámos el título principal de la página, junto con pequeño parrafo descriptivo de la calidad del restaurante -->
+        <div id="inico" class="bg-light text-center py-5">
+            <div class="container py-5">
+
+                <h1 class="display-4">Bienvenidos a nuestro Rincón Orgánico</h1>
+                <p class="lead">Disfruta de nuestros deliciosos y saludables productos, acompañado de un ambiente acogedor.</p>
+                <a href="#productos" class="btn btn-primary btn-lg mt-3">Ver Carta</a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <main class="bg-cafe">
+        
+        <section id="productos" class="container py-5">
+            <h2 class="text-center mb-5">Nuestros Productos Preferidos</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/ensaladaCesar.jpg" class="card-img-top" alt="Plato de Ensalada César">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold">Ensalada Cesar Pollo</h5>
+                            <p class="card-text flex-grow-1">Deliciosa Ensalada, acompañada de una esquisita pechuga de pollo a la plancha y adereso</p>
+                            <button class="btn btn-outline-dark mt-auto">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/pavo.jpg" class="card-img-top" alt="Sándwich de pavo Saludable">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold">Sándwich de pavo</h5>
+                            <p class="card-text flex-grow-1">Rico Sándwich, hecho de pan integral, Pavo minuciosamente seleccionado, con salsa de arándanos o mostaza</p>
+                            <button class="btn btn-outline-dark mt-auto">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/batidoPurple.jpg" class="card-img-top" alt="Vaso Grande de Batido Purple">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold">Batido Purple</h5>
+                            <p class="card-text flex-grow-1"> Combina duraznos y arándanos congelados con un toque de leche de almendras y yogur</p>
+                            <button class="btn btn-outline-dark mt-auto">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h2 class="mb-4">Horarios de Atención</h2>
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <ul class="list-unstyled lead mb-0">
+                            <li class="mb-2"><strong>Lunes a Viernes:</strong> 08:00 AM - 08:00 PM</li>
+                            <li class="mb-2"><strong>Sábados:</strong> 09:00 AM - 06:00 PM</li>
+                            <li><strong>Domingos:</strong> Cerrado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container py-5 mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 bg-white p-4 p-md-5 rounded shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
     
 </body>
 </html>
