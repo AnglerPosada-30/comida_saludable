@@ -398,6 +398,81 @@ a:not([href]):not([class]):hover {
 code,
 kbd,
 pre,
+/* ---------- Estilos personalizados para tema 'restaurante saludable' ---------- */
+
+/*
+  Comentario general: Añadimos variables de color que evocan tonos naturales
+  (verde hoja, menta, beige suave, acento coral). Cada sección utilizará
+  un fondo suave y una barra lateral de acento para resaltarla.
+*/
+:root {
+    --leaf-green: #2f9e4a; /* verde hoja: acento principal */
+    --mint: #e6f4ea;       /* menta suave: fondo para productos */
+    --beige: #f7f2e7;      /* beige claro: fondo para hero y contacto */
+    --pea: #dff3dc;        /* verde pálido: fondo para horarios */
+    --accent: #f28b6b;     /* coral suave: acento para botones/links */
+    --section-radius: 12px;/* radio para esquinas suaves */
+}
+
+/* Clase utilitaria usada en cada sección para aplicar padding, esquina y separación */
+.section-highlight {
+    border-radius: var(--section-radius);
+    padding: 2.5rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero (inicio): fondo cálido y texto oscuro para bienvenida */
+/* Comentario: fondo beige para transmitir calidez y naturalidad */
+#inicio {
+    background-color: var(--beige);
+    color: #2b4e37;
+}
+
+/* Productos: fondo menta y borde acentuado a la izquierda */
+/* Comentario: menta clara para destacar alimentos frescos y saludables */
+#productos {
+    background-color: var(--mint);
+    border-left: 6px solid var(--leaf-green);
+}
+
+/* Horarios: fondo verde pálido con acento sutil */
+/* Comentario: tono verde pálido para transmitir tranquilidad y orden */
+#horarios {
+    background-color: var(--pea);
+    border-left: 6px solid rgba(47,158,74,0.12);
+}
+
+/* Contacto: fondo beige claro, botón de envío con acento coral */
+/* Comentario: se reutiliza el beige del hero para coherencia visual */
+#contacto {
+    background-color: var(--beige);
+}
+
+/* Ajuste: botones principales con color de acento temático */
+/* Comentario: hacemos que los botones llamen la atención con un color complementario */
+.btn-primary {
+    background-color: var(--leaf-green);
+    border-color: var(--leaf-green);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #267a38;
+    border-color: #267a38;
+}
+
+/* Tarjetas: asegurar buen contraste sobre fondos suaves */
+.card {
+    background-color: #ffffff; /* mantener tarjetas limpias y legibles */
+}
+
+/* Pequeña sombra/espaciado para separar secciones del fondo */
+.section-highlight .container,
+.section-highlight > .container {
+    background: transparent;
+}
+
+/* Fin de los estilos personalizados */
+
 samp {
     font-family: var(--bs-font-monospace);
     font-size: 1em
